@@ -1,16 +1,17 @@
-﻿using System;
+﻿using GraphQLDemo.ViewModels;
+using System;
+using WhiteMvvm;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace GraphQLDemo
 {
-    public partial class App : Application
+    public partial class App : WhiteApplication
     {
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            SetHomePage<MainViewModel>();
         }
 
         protected override void OnStart()

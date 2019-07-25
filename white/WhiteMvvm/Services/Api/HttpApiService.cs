@@ -21,7 +21,7 @@ using Xamarin.Essentials;
 
 namespace WhiteMvvm.Services.Api
 {
-    public class ApiService : IApiService
+    public class HttpApiService : IApiService
     {
         private readonly IMainThread _mainThread;
         private readonly HttpClient _httpClient = new HttpClient(new HttpClientHandler()
@@ -42,7 +42,7 @@ namespace WhiteMvvm.Services.Api
 
             }
         }
-        public ApiService(INavigationService navigationService, IMainThread mainThread)
+        public HttpApiService(INavigationService navigationService, IMainThread mainThread)
         {
             _mainThread = mainThread;
             navigationService.PagePopup += _navigationService_PagePopup;

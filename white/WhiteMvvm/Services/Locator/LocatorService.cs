@@ -34,7 +34,7 @@ namespace WhiteMvvm.Services.Locator
             _container.RegisterType<IDialogService, DialogService>(new ContainerControlledLifetimeManager());
             _container.RegisterType<IConnectivity, ConnectivityService>(new ContainerControlledLifetimeManager());
             _container.RegisterType<IReflectionResolve, ReflectionResolve>(new ContainerControlledLifetimeManager());
-            _container.RegisterType<IApiService, ApiService>(new ContainerControlledLifetimeManager());
+            _container.RegisterType<IApiService, HttpApiService>(new ContainerControlledLifetimeManager());
             _container.RegisterType<IRealmService, RealmService>(new ContainerControlledLifetimeManager());
             _container.RegisterType<IShare, ShareService>(new ContainerControlledLifetimeManager());
             _container.RegisterType<IPreferences, PreferencesService>(new ContainerControlledLifetimeManager());
