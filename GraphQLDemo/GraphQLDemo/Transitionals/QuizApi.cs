@@ -14,6 +14,6 @@ namespace GraphQLDemo.Transitionals
         public ProfileApi Profile { get; set; }
 
         [JsonProperty("quizResponse")]
-        public QuizResponseApi QuizResponse { get; set; }
+        public QuizResponseApi QuizResponse { get; set; }        
     }
 }
