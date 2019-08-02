@@ -167,9 +167,9 @@ namespace WhiteMvvm.Bases
             _isOnAppeared = true;
             OnAppeared();
         }
-        protected internal virtual bool HandleBackButton()
+        protected internal virtual Task<bool> HandleBackButton()
         {
-            return true;
+            return Task.FromResult(true);
         }
         public void OnPagePopup()
         {

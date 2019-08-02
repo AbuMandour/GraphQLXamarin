@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using WhiteMvvm.Bases;
 
 namespace GraphQLDemo.ViewModels
 {
     public class HttpClientViewModel : BaseViewModel
     {
-        protected override bool HandleBackButton()
+        protected override async Task<bool> HandleBackButton()
         {
-            MainThreadService.BeginInvokeOnMainThread((async () =>
-            {
-                await NavigationService.PopModelAsync();
-            }));
+            await NavigationService.PopModelAsync();
             return true;
         }
-
     }
 }

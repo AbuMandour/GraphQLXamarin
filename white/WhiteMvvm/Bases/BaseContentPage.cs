@@ -35,7 +35,8 @@ namespace WhiteMvvm.Bases
         }
         protected override bool OnBackButtonPressed()
         {
-            var result = ViewModel?.HandleBackButton();
+            var isHandleBackButton = ViewModel?.HandleBackButton();
+            var result = isHandleBackButton?.GetAwaiter().GetResult();
             return result ?? false;
         }
 
