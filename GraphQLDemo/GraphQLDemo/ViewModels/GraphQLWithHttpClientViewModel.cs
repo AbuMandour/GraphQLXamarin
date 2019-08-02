@@ -5,15 +5,16 @@ using WhiteMvvm.Bases;
 
 namespace GraphQLDemo.ViewModels
 {
-    public class GraphQLViewModel : BaseViewModel
+    public class GraphQLWithHttpClientViewModel : BaseViewModel
     {
         protected override bool HandleBackButton()
         {
             MainThreadService.BeginInvokeOnMainThread((async () =>
             {
                 await NavigationService.PopModelAsync();
-            }));            
+            }));
             return true;
         }
+
     }
 }

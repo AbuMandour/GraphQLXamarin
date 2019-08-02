@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <bases:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:bases="clr-namespace:WhiteMvvm.Bases;assembly=WhiteMvvm"
-             AutoWireViewModel="True"
-             x:Class="GraphQLDemo.Views.GraphQLPage">
+             xmlns:bases="clr-namespace:WhiteMvvm.Bases;assembly=WhiteMvvm"             
+             x:Class="GraphQLDemo.Views.GraphQLWithHttpClientPage"
+             AutoWireViewModel="True">
     <bases:BaseContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to GraphQLPage!"
+            <Label Text="Welcome to GraphQLWithHttpClientPage!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

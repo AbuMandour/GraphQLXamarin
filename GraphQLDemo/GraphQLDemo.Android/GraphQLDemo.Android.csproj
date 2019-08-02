@@ -98,6 +98,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\white\WhiteMvvm\WhiteMvvm.csproj">
+      <Project>{EA94C337-3983-4C70-935D-2195BDF5431D}</Project>
+      <Name>WhiteMvvm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GraphQLDemo\GraphQLDemo.csproj">
       <Project>{C3928CF0-FD2B-4140-A3DF-B0B2DBEBEE21}</Project>
       <Name>GraphQLDemo</Name>

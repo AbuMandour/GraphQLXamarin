@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace GraphQLDemo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GraphQLPage : BaseContentPage
-    { 
-        public GraphQLPage()
+    public partial class GraphQLWithHttpClientPage : BaseContentPage
+    {
+        public GraphQLWithHttpClientPage()
         {
             InitializeComponent();
         }
