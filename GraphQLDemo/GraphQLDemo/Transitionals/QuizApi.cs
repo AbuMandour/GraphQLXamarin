@@ -15,5 +15,10 @@ namespace GraphQLDemo.Transitionals
 
         [JsonProperty("quizResponse")]
         public QuizResponseApi QuizResponse { get; set; }
+
+        public override TBaseModel ToModel<TBaseModel>()
+        {
+            return base.ToModel<TBaseModel>();
+        }
     }
 }
